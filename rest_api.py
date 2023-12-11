@@ -41,3 +41,10 @@ urlpatterns = [
     path('api/login/', CustomAuthToken.as_view(), name='api-login'),
     path('api/register/', UserRegistrationView.as_view(), name='api-register'),
 ]
+#python manage.py migrate
+#python manage.py createsuperuser
+#python manage.py runserver
+
+#For API-1, you can send a POST request to /api/login/ with the username and password in the request body to obtain an authentication token.
+
+#For API-2, you can send a POST request to /api/register/ with the necessary user information (such as username, email, password) in the request body to register a new user account.
